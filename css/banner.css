@@ -1,0 +1,56 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+    color: #F5E8C7; /* Creamy Beige for text */
+    transition: transform 0.5s ease, color 0.5s ease; /* Smooth scaling and color transition */
+}
+
+.banner:hover .banner-text {
+    transform: scale(1.2); /* Slightly increase size on hover */
+    color: #F1C27D; /* Soft Golden Glow */
+}
+
+.banner-text h1 {
+    font-family: 'Dancing Script', cursive; /* Or a script font of your choice */
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.banner-text p {
+    font-family: 'Roboto Condensed', serif; /* Serif font for the tagline */
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #F1C27D; /* Soft Golden Glow for contrast */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 2rem;
+    }
+
+    .banner-text p {
+        font-size: 1.2rem;
+    }
+}

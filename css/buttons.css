@@ -1,0 +1,35 @@
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: space-around; /* Space buttons evenly */
+    gap: 1rem; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.common-button {
+    background-color: #587D5B; /* Forest green */
+    color: #eae3d4; /* Creamy Beige */
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.common-button:hover {
+    background-color: #7A9C8E; /* Muted Teal */
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center buttons */
+    }
+
+    .btn {
+        width: 80%; /* Make buttons take full width */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
