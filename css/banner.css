@@ -1,3 +1,39 @@
+/* Responsive Adjustments */
+@media (max-width: 768px) { /* Tablets and small screens */
+    blockquote {
+        gap: 1.5ch; /* Reduce gap */
+        font-size: 1.2rem; /* Slightly smaller font size */
+        line-height: 1.4;
+
+        > p {
+            inline-size: 35ch; /* Reduce max line length */
+        }
+
+        &::before {
+            inset-inline: 15%;
+            inset-block: -40%; /* Adjust background placement */
+        }
+    }
+}
+
+@media (max-width: 480px) { /* Mobile screens */
+    blockquote {
+        gap: 1ch; /* Narrower gap */
+        line-height: 1.3;
+
+        > p {
+            inline-size: auto; /* Allow text to take up full width */
+            text-wrap: balance;
+            font-size: 1.3rem !important; /* Smaller font size */
+        }
+
+        &::before {
+            inset-inline: 20%;
+            inset-block: -30%; /* Adjust background placement */
+        }
+    }
+}
+
 .banner {
     position: relative;
     width: 100%;
@@ -8,13 +44,23 @@
     overflow: hidden;
 }
 
+.membership-banner {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background-image: url('../images/membership-banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Dark overlay for text readability */
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,15 +68,17 @@
 
 .banner-text {
     text-align: center;
-    color: #F5E8C7; /* Creamy Beige for text */
+    color: #F5E8C7;
 }
 
 .banner-text h1 {
-    transition: transform 0.5s ease, color 0.5s ease; /* Smooth scaling and color transition */
-}     
+    transition: transform 0.5s ease, color 0.5s ease;
+    /* Smooth scaling and color transition */
+}
 
 .banner:hover .banner-text h1 {
-    transform: scale(1.2); /* Slightly increase size on hover */
+    transform: scale(1.2);
+    /* Slightly increase size on hover */
 }
 
 .banner-text h1 {
@@ -41,10 +89,12 @@
 }
 
 .banner-text p {
-    font-family: 'Merriweather', serif; /* Serif font for the tagline */
+    font-family: 'Merriweather', serif;
+    /* Serif font for the tagline */
     font-size: 1.8rem;
     margin-top: 0;
-    color: #F1C27D; /* Soft Golden Glow for contrast */
+    color: #F1C27D;
+    /* Soft Golden Glow for contrast */
 }
 
 .paper-img {
@@ -52,4 +102,46 @@
     background-size: cover;
     background-position: center;
     overflow: hidden;
+}
+
+.flower-img {
+    background-image: url('../images/flowers.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+blockquote {
+    hanging-punctuation: first last;
+
+    gap: 2ch;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 1.5;
+
+    position: relative;
+
+    &::before {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        inset-inline: 10%;
+        inset-block: -50%;
+        aspect-ratio: 1;
+        border-radius: 1e3px;
+    }
+
+    >p {
+        inline-size: 40ch; /* Maximum line length */
+        text-wrap: balance;
+        font-family: 'Playfair Display' !important;
+
+        &::before {
+            content: open-quote;
+        }
+
+        &::after {
+            content: close-quote;
+        }
+    }
 }

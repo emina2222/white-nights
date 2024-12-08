@@ -12,6 +12,35 @@ body {
     line-height: 1.6;
 }
 
+.logo {
+    width: 10rem !important;
+    height: auto !important;
+}
+
+.navbar {
+    background-color: black;
+}
+
+.navbar-item {
+    color: #fff;
+    font-family: 'Merriweather', serif; /* Serif font for the tagline */
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.navbar-item:hover {
+    color: rgb(241, 194, 125);
+    border-bottom: 3px solid white;
+}
+
+.active {
+    color: rgb(241, 194, 125);
+    font-family: 'Merriweather', serif; /* Serif font for the tagline */
+    background-color: transparent;
+    padding: 1rem;
+    border-bottom: 3px solid rgb(241, 194, 125) !important;
+}
+
 .heading {
     color: #4A2C2A; /* Deep Espresso Brown */
     font-family: 'Dancing Script', cursive;
@@ -24,54 +53,23 @@ body {
     font-size: 6em;
 }
 
-/* Header Styles */
-.header {
-    /*background-color: #4A2C2A; Espresso Brown */
-    color: #F5E8C7; /* Creamy Beige */
-    padding: 1rem;
-    text-align: center;
-}
-
-.header-nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    padding: 1rem;
-    list-style-type: none;
-    margin-bottom: 10%;
-}
-
-.header-nav-item {
-    margin: 0 15px;
-}
-
-.header-nav-link {
-    text-decoration: none;
-    color: #F5E8C7; /* Creamy Beige */
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-}
-
-.header-nav-link:hover {
-    color: #F1C27D; /* Soft Golden Glow */
-    text-decoration: underline;
-}
-
-
-/* Sections */
-.logo-section {
-    background-color: #4A2C2A; /* Deep Espresso Brown */
-}
-
-.logo-section-image {
-    grid-column: span 6; /* Spans 6 columns */
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
 .section {
     background-color: #F5E8C7 !important;
+}
+
+.light-bg {
+    background-color: #F5E8C7;
+    color: #4A2C2A;
+}
+
+.dark-bg {
+    background-color: #90553C;
+    color: #F5E8C7 !important;
+}
+
+.medium-bg {
+    background-color: #68260d;
+    color: #F5E8C7 !important;
 }
 
 /* Footer */

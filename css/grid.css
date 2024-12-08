@@ -19,17 +19,35 @@
     padding: 3rem;
     margin: 2rem;
     justify-content: space-between; /* Align items evenly */
-    background-color: #F5E8C7;
 }
 
-.heading {
+.grid-heading {
     text-align: center;
     width: 100%; /* Spans full width */
+    color: #4A2C2A; /* Deep Espresso Brown */
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;    
+}
+
+.division-border-light {
+    border: 2px solid #4A2C2A;
+}
+
+.division-border-dark {
+    border: 2px solid #F5E8C7;
 }
 
 .division {
     flex: 1 1 calc(50% - 20px); /* Takes up 50% width minus gap spacing */
-    border: 2px solid #4A2C2A;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.division-col12 {
+    flex: 1 1 calc(100% - 20px); /* Takes up 50% width minus gap spacing */
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -62,6 +80,5 @@
 .content-wrapper p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #4A2C2A;
     font-family: 'Merriweather', sans-serif;
 }

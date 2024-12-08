@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/buttons.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/text.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,13 +41,13 @@
                 <ul
                     class="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
                     <li>
-                        <a href="index.html" class="block py-2 px-3 text-white rounded md:bg-transparent md:p-0"
+                        <a href="index.html" class="block py-2 px-3 text-white md:bg-transparent md:p-0"
                             aria-current="page">
                             <img src="images/home.png" alt="Toggle navigation" class="w-7 h-7">
                         </a>
                     </li>
                     <li>
-                        <a href="membership.html" class="block py-2 px-3 md:border-0 md:p-0 navbar-item">Članstvo</a>
+                        <a href="membership.html" class="active block py-2 px-3 md:border-0 md:p-0">Članstvo</a>
                     </li>
                     <li>
                         <a href="calendar.html" class="block py-2 px-3 md:border-0 md:p-0 navbar-item">Kalendar</a>
@@ -66,64 +67,39 @@
     </nav>
 
     <!-- Banner -->
-    <div class="banner">
+    <div class="membership-banner">
         <div class="overlay">
             <div class="content flex flex-col items-center gap-8">
                 <div class="banner-text">
-                    <h1>Bele Noći</h1>
-                    <p>Kafe Biblioteka</p>
-                </div>
-                <div>
-                    <button class="banner-button">Naša vizija</button>
+                    <blockquote>
+                        <p>Dobri prijatelji, dobre knjige i čista savest: to je idealan život.</p>
+                        <footer>—<cite>Mark Tven</cite></footer>
+                    </blockquote>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Introduction -->
-    <div class="flex items-center justify-center min-h-screen paper-img">
-        <div class="grid-container light-bg">
-            <div class="grid-heading">
-                <h1>Voliš li da čitaš?</h1>
+    <div class="flex items-center justify-center medium-bg flower-img">
+        <div class="grid-container medium-bg">
+            <div class="grid-heading medium-bg">
+                <h1>Šta članstvo podrazumeva?</h1>
             </div>
-            <div class="division division-border-light">
-                <a class="content-wrapper" href="products.html">
-                    <img src="images/coffee.png" alt="Coffee Icon" />
-                    <p>
-                        Pripremili smo ti asortiman kvalitetne kafe i čajeva.<br />
-                        Svakodnevno ulažemo trud da tvoj omiljeni napitak bude
-                        razlog više da uživaš čitajući kod nas.
-                    </p>
-                </a>
+            <div class="division-col12 bottom-border">
+                <div class="container">
+                    <span class="text">Učešće na književnim večerima</span>
+                </div>
             </div>
-            <div class="division division-border-light">
-                <a class="content-wrapper" href="calendar.html">
-                    <img src="images/calendar.png" alt="Calendar Icon" />
-                    <p>
-                        Pridruži se našim književnim događajima!<br />
-                        U kalendaru možeš videti sve termine izdvojene za
-                        diskusije o našim omiljenim knjigama.
-                    </p>
-                </a>
+            <div class="division-col12 bottom-border">
+                <div class="container">
+                    <span class="text">Pozajmljivanje knjiga iz naše biblioteke</span>
+                </div>
             </div>
-            <div class="division division-border-light">
-                <a class="content-wrapper" href="contact.html">
-                    <img src="images/book.png" alt="Book Icon" />
-                    <p>
-                        Pišeš poeziju ili prozu?<br />
-                        Poseti nas i zakaži sopstvenu prezentaciju svog književnog dela.
-                    </p>
-                </a>
-            </div>
-            <div class="division division-border-light">
-                <a class="content-wrapper" href="contact.html">
-                    <img src="images/contact.png" alt="Contact Icon" />
-                    <p>
-                        Želiš da naučiš nešto više o nama?<br />
-                        Imaš ideju o događaju koji možemo da organizujemo u našem kutku?<br />
-                        Slobodno nam napiši poruku na mejl, društvene mreže ili nas pozovi!
-                    </p>
-                </a>
+            <div class="division-col12">
+                <div class="container">
+                    <span class="text"> Popust 10% na ceo asortiman</span>
+                </div>
             </div>
         </div>
     </div>
@@ -145,4 +121,5 @@
     </script>
 
 </body>
+
 </html>
