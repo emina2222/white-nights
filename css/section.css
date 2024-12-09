@@ -1,0 +1,43 @@
+.pricing-section {
+    background: #F5E8C7;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 2rem;
+}
+
+.pricing-section:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-section h1 {
+    color: #90553C;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+    color: #01452f;
+    font-weight: bold;
+    padding: 13px 18px;
+    border: 1px solid #90553C;
+}
+
+.note {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+}
+
+.color-transition {
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.color-transition:hover {
+    background-color:#4A2C2A;
+}
+.color-transition:hover p {
+    color: #F5E8C7;
+}
