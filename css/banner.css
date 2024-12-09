@@ -54,6 +54,16 @@
     overflow: hidden;
 }
 
+.products-banner {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background-image: url('../images/products-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
 .overlay {
     position: absolute;
     top: 0;
