@@ -41,6 +41,19 @@ body {
     border-bottom: 3px solid rgb(241, 194, 125) !important;
 }
 
+.active-transparent {
+    color: #fff;
+    font-family: 'Merriweather', serif; /* Serif font for the tagline */
+    background-color: transparent;
+    padding: 1rem;
+    border-bottom: 3px solid transparent !important;
+}
+
+.active-transparent:hover {
+    color: rgb(241, 194, 125);
+    border-bottom: 3px solid #fff !important;
+}
+
 .heading {
     color: #4A2C2A; /* Deep Espresso Brown */
     font-family: 'Dancing Script', cursive;

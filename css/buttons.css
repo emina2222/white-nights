@@ -29,3 +29,17 @@
 .banner-button:hover {
     background-color: rgba(241, 194, 125, 0.7); /* Darker brown background on hover (40% opacity) */
 }
+
+.sponsor-button {
+    border: 4px solid #fff !important;
+    background-color: rgba(241, 194, 125, 0.2); /* Transparent brown (with 20% opacity) */
+    color: #fff;
+    font-family: 'Merriweather', sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sponsor-button:hover {
+    background-color: rgba(241, 194, 125, 0.7); /* Darker brown background on hover (40% opacity) */
+}
