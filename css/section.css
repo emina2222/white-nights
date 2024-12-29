@@ -2,7 +2,11 @@
     .menu-item span:first-child {
         text-align: left;
         text-wrap: balance !important;
-    }    
+    }
+
+    .sessions p {
+        font-size: .9rem;
+    }
 }
 
 /* Membership sections */
@@ -44,8 +48,9 @@
 }
 
 .color-transition:hover {
-    background-color:#4A2C2A;
+    background-color: #4A2C2A;
 }
+
 .color-transition:hover p {
     color: #F5E8C7;
 }
@@ -69,18 +74,18 @@
 .menu-heading {
     text-align: center;
     width: 100%;
-    color: #4A2C2A; /* Deep Espresso Brown */
+    color: #4A2C2A;
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;    
+    font-size: 3em;
     border-bottom: 2px solid rgba(74, 44, 42, 0.4);
 }
 
 .sponsor-heading {
     text-align: center;
     width: 100%;
-    color: #4A2C2A; /* Deep Espresso Brown */
+    color: #4A2C2A;
     font-family: 'Dancing Script', cursive;
-    font-size: 3em;    
+    font-size: 3em;
 }
 
 .menu-column {
@@ -115,7 +120,45 @@
     margin: 0 5px 0 5px;
 }
 
-.dot div:first-child, .dot div:last-child{
-    float:left;
+.dot div:first-child,
+.dot div:last-child {
+    float: left;
 }
 
+/* About us */
+.sessions ul,
+.sessions li {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    background: #4A2C2A;
+    padding: 3rem 0;
+}
+
+.contact-wrapper {
+    background: #F5E8C7;
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.contact-heading {
+    color: #4A2C2A; /* Deep Espresso Brown */
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    text-align: center;
+}
+
+.contact-paragraph {
+    color: #4f4f4f;
+    font-family: 'Playfair Display', sans-serif;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    text-align: center;
+}
